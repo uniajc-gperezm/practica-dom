@@ -1,0 +1,114 @@
+body {
+    background-color: #d4ad3d;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mainImage {
+    width: 250px;
+    height: auto;
+}
+
+.container {
+    margin-top: 50px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background: rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-selection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    align-items: center;
+}
+
+#inputTask {
+    padding: 10px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+}
+
+#addButton {
+    color: black;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#addButton:hover {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.taskItem {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.check {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 50px;
+}
+
+.check:hover {
+    transform: scale(1.2);
+
+}
+
+.taskItem div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.taskItem span {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.deleteBtn {
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+.deleteBtn:hover {
+    transform: scale(1.2);
+    background-color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+#stats span:first-child {
+    margin-right: 70px;
+}

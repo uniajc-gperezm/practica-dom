@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My TODOs</title>
+</head>
+<body>
+    <div class="container">
+        <center><img class="mainImage" src="./img/tasks.png" alt="main-image" srcset=""></center>
+        <h1>JavaScript - To do list</h1>
+        <div class="input-selection">
+            <input type="text" id="inputTask" placeholder="Escriba aqui tu tarea">
+            <button id="addButton">Agregar</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p id="stats">
+            Tareas pendientes: <span id="waiting">0</span>
+            Completadas: <span id="completed">0</span>
+        </p>
+    </div>
+</body>
+<script src="logic.js"></script>
+</html>
