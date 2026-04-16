@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="contenedor-app">
+    <header class="encabezado-app">
+      <h1>To do List</h1>
+      <p>Aqui puedes gestionar tus tareas de forma sencilla y eficiente.</p>
+    </header>
+
+    <section class="formulario-tareas">
+      <input id="entradaTarea" type="text" placeholder="Escribe una tarea..." aria-label="Nueva tarea">
+      <button id="botonAgregarTarea" type="button">Agregar tarea</button>
+    </section>
+
+    <section class="lista-tareas">
+      <h2>Tareas</h2>
+      <ul id="tareas"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
