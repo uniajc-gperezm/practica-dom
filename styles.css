@@ -48,12 +48,16 @@ background: #ff2f8a;
 
 li {
 background: #ffe6f3;
-padding: 12px;
+padding: 12px 15px;
 border-radius: 8px;
 margin-bottom: 10px;
 display: flex;
-justify-content: space-between;
 align-items: center;
+justify-content: space-between;
+}
+
+.texto-tarea{
+margin-left:10px;
 }
 
 .completada {
@@ -69,4 +73,31 @@ background: #ff89c5;
 
 li button:hover {
 background: #ff4fa3;
+}
+
+
+input[type="checkbox"]{
+width:18px;
+height:18px;
+cursor:pointer;
+margin-left:5px;
+}
+
+
+#contador{
+text-align:center;
+margin-top:15px;
+color:#888;
+font-size:14px;
+}
+
+.botones{
+display:flex;
+gap:8px;
+}
+
+.tarea-izquierda{
+display:flex;
+align-items:center;
+gap:10px;
 }
