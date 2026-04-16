@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Maria del Mar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Mi Gestor de Tareas</h1>
+        <p>Fundamentos Web I - Grupo 611</p>
+
+        <div class="input-section">
+            <input type="text" id="todo-title" placeholder="¿Qué hay que hacer?">
+            
+            <select id="todo-status">
+                <option value="en-proceso">En Proceso ⏳</option>
+                <option value="completa">Completa ✅</option>
+                <option value="cancelada">Cancelada ❌</option>
+            </select>
+
+            <textarea id="todo-obs" placeholder="Observaciones o detalles adicionales..." rows="3"></textarea>
+            
+            <input type="date" id="date-picker">
+            
+            <button id="add-todo-btn">Agregar Tarea</button>
+        </div>
+
+        <div id="todo-list" class="list-container">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

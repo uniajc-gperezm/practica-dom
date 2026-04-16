@@ -1,0 +1,154 @@
+:root { 
+    --primary-pastel: #b39ddb;
+    --primary-dark: #9575cd;
+    --bg-color: #f3f0f7;
+    --text-color: #4a4754;
+    --danger: #ff8a80;   /* Rojo pastel */
+    --success: #81c784;  /* Verde pastel */
+    --warning: #ffd54f;  /* Amarillo pastel */
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.app-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(179, 157, 219, 0.2);
+    width: 100%;
+    max-width: 450px; 
+}
+
+h1 { color: var(--primary-dark); text-align: center; margin-bottom: 5px; }
+p { text-align: center; color: #aaa; margin-bottom: 25px; font-size: 0.9rem; }
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+
+input, select, textarea {
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+textarea { resize: none; height: 80px; }
+
+input:focus, select:focus, textarea:focus { 
+    border-color: var(--primary-pastel); 
+}
+
+button#add-todo-btn {
+    padding: 12px;
+    background-color: var(--primary-pastel);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button#add-todo-btn:hover { background-color: var(--primary-dark); }
+
+
+.todo-item {
+    background: #fafafa;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid #ccc; 
+}
+
+.todo-item.en-proceso { border-left-color: var(--warning); }
+.todo-item.completa { border-left-color: var(--success); background-color: #f1f8f1; }
+.todo-item.cancelada { border-left-color: var(--danger); }
+
+.todo-info { flex-grow: 1; }
+
+.header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-estado {
+    font-size: 0.7rem;
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilo para el campo de observaciones */
+.obs-text {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #666;
+    background: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px dashed #ddd;
+}
+
+.delete-btn {
+    background: transparent;
+    color: var(--danger);
+    border: 1px solid var(--danger);
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+     background: var(--danger); color: white;
+     }
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.edit-btn { 
+    background: #e3f2fd; color: #1976d2; 
+}
+.edit-btn:hover {
+     background: #bbdefb; 
+    }
+
+.delete-btn{ 
+    background: #ffeae8; color: #ff8a80;
+ }
+.delete-btn:hover {
+     background: #ffcdd2; 
+    }
+input:focus, textarea:focus {
+    box-shadow: 0 0 10px rgba(179, 157, 219, 0.4);
+}
